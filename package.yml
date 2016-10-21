@@ -1,0 +1,25 @@
+name       : shiboken
+version    : 1.2.4
+release    : 1
+source     :
+    - https://github.com/PySide/Shiboken/archive/1.2.4.tar.gz : 1536f73a3353296d97a25e24f9554edf3e6a48126886f8d21282c3645ecb96a4
+license    : GPL-2.0
+component  : programming.tools
+summary    : Python bindings generator that uses API Extractor and outputs CPython code.
+description: |
+    Python bindings generator that uses API Extractor and outputs CPython code.
+builddeps  :
+    - pkgconfig(QtCore)
+    - python-pyside
+setup      : |
+    mkdir python2 && cd python2
+    %cmake \
+        -DBUILD_TESTS=OFF \
+        -DQT_QMAKE_EXECUTABLE=/usr/bin/qmake-qt4 \
+        -DQT_RCC_EXECUTABLE=/usr/bin/rcc-qt4 ..
+build      : |
+    cd python2
+    %make
+install    : |
+    cd python2
+    %make_install

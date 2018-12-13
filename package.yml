@@ -1,11 +1,12 @@
 name       : shiboken
 version    : 1.2.4
-release    : 1
+release    : 2
 source     :
     - https://github.com/PySide/Shiboken/archive/1.2.4.tar.gz : 1536f73a3353296d97a25e24f9554edf3e6a48126886f8d21282c3645ecb96a4
 license    : GPL-2.0
 component  : programming.tools
-summary    : Python bindings generator that uses API Extractor and outputs CPython code.
+summary    : Python bindings generator that uses API Extractor and outputs CPython
+    code.
 description: |
     Python bindings generator that uses API Extractor and outputs CPython code.
 builddeps  :

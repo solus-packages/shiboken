@@ -2,8 +2,8 @@
     <Source>
         <Name>shiboken</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
         <License>GPL-2.0</License>
         <PartOf>programming.tools</PartOf>
@@ -19,10 +19,11 @@
 </Description>
         <PartOf>programming.tools</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/shiboken</Path>
+            <Path fileType="library">/usr/lib/libshiboken-python2.7.so.1.2</Path>
+            <Path fileType="library">/usr/lib/libshiboken-python2.7.so.1.2.4</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/shiboken.so</Path>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="man">/usr/share/man/man1/shiboken.1</Path>
         </Files>
     </Package>
     <Package>
@@ -32,22 +33,42 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">shiboken</Dependency>
+            <Dependency release="2">shiboken</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib64/cmake/</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/shiboken/autodecref.h</Path>
+            <Path fileType="header">/usr/include/shiboken/basewrapper.h</Path>
+            <Path fileType="header">/usr/include/shiboken/bindingmanager.h</Path>
+            <Path fileType="header">/usr/include/shiboken/conversions.h</Path>
+            <Path fileType="header">/usr/include/shiboken/gilstate.h</Path>
+            <Path fileType="header">/usr/include/shiboken/helper.h</Path>
+            <Path fileType="header">/usr/include/shiboken/python25compat.h</Path>
+            <Path fileType="header">/usr/include/shiboken/sbkconverter.h</Path>
+            <Path fileType="header">/usr/include/shiboken/sbkdbg.h</Path>
+            <Path fileType="header">/usr/include/shiboken/sbkenum.h</Path>
+            <Path fileType="header">/usr/include/shiboken/sbkmodule.h</Path>
+            <Path fileType="header">/usr/include/shiboken/sbkpython.h</Path>
+            <Path fileType="header">/usr/include/shiboken/sbkstring.h</Path>
+            <Path fileType="header">/usr/include/shiboken/sbkversion.h</Path>
+            <Path fileType="header">/usr/include/shiboken/shiboken.h</Path>
+            <Path fileType="header">/usr/include/shiboken/shibokenbuffer.h</Path>
+            <Path fileType="header">/usr/include/shiboken/shibokenmacros.h</Path>
+            <Path fileType="header">/usr/include/shiboken/threadstatesaver.h</Path>
+            <Path fileType="header">/usr/include/shiboken/typeresolver.h</Path>
+            <Path fileType="library">/usr/lib/cmake/Shiboken-1.2.4/ShibokenConfig-python2.7.cmake</Path>
+            <Path fileType="library">/usr/lib/cmake/Shiboken-1.2.4/ShibokenConfig.cmake</Path>
+            <Path fileType="library">/usr/lib/cmake/Shiboken-1.2.4/ShibokenConfigVersion.cmake</Path>
+            <Path fileType="library">/usr/lib/libshiboken-python2.7.so</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/shiboken.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2016-10-21</Date>
+        <Update release="2">
+            <Date>2018-12-13</Date>
             <Version>1.2.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>

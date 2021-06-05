@@ -1,6 +1,9 @@
 libshiboken-python2.7.so.1.2:SbkDeallocWrapper
 libshiboken-python2.7.so.1.2:SbkDeallocWrapperWithPrivateDtor
+libshiboken-python2.7.so.1.2:SbkEnumType_Type
 libshiboken-python2.7.so.1.2:SbkObjectTpNew
+libshiboken-python2.7.so.1.2:SbkObjectType_Type
+libshiboken-python2.7.so.1.2:SbkObject_Type
 libshiboken-python2.7.so.1.2:_ZN8Shiboken10ObjectType10isUserTypeEP11_typeobject
 libshiboken-python2.7.so.1.2:_ZN8Shiboken10ObjectType15getOriginalNameEP13SbkObjectType
 libshiboken-python2.7.so.1.2:_ZN8Shiboken10ObjectType15getTypeUserDataEP13SbkObjectType
@@ -181,3 +184,8 @@ libshiboken-python2.7.so.1.2:_ZN8Shiboken8GilStateC1Ev
 libshiboken-python2.7.so.1.2:_ZN8Shiboken8GilStateC2Ev
 libshiboken-python2.7.so.1.2:_ZN8Shiboken8GilStateD1Ev
 libshiboken-python2.7.so.1.2:_ZN8Shiboken8GilStateD2Ev
+libshiboken-python2.7.so.1.2:_fini
+libshiboken-python2.7.so.1.2:_init
+shiboken.so:_fini
+shiboken.so:_init
+shiboken.so:initshiboken
